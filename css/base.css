@@ -1,0 +1,393 @@
+/* 砍价基础css */
+/* 陶飞 2018年07月26日09:10:10*/
+/*砍价首页css*/
+html{
+	position: relative;
+}
+.bg-col-top{
+    background: url(../img/bg-col-top-bj.png) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+    height: 100%;
+    width: 100%;
+}
+.bg-head-img{
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin: 20px 0 5px 0;
+}
+.col1-top{
+	text-align: center;
+	font-size: 0.75rem;
+	color: #fff;
+	position: relative;
+}
+.hd-rule{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 3px 5px;
+	font-size: 0.75em;
+	border-radius: 5px;
+	border: 1px solid #fff;	
+}
+.col1-top p{
+	line-height: 1rem;
+}
+.col1-area1-le img{
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 5px;
+}
+.area1-ri-name{
+	font-size: 0.7rem;
+	line-height: 1rem;
+	height: 2rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.col1-area1-le{
+	float: left;
+	width: 20%;
+}
+.col1-area1-ri{
+	float: left;
+	width: 77%;
+	padding-left: 3%;
+}
+.col1-main{
+	margin-bottom: 30px;
+}
+.col1-cont{
+	overflow: hidden;
+	margin-top: 15px;
+	padding: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.area1-ri-cont{
+	overflow: hidden;
+}
+.area1-ri-cont p{
+	display: inline-block;
+}
+.area1-ri-price{
+	font-size: 0.7rem;
+	color: #FF0000;
+}
+.area1-ri-bg{
+	font-size: 0.6rem;
+	margin-left: 5px;
+	color: #666;
+}
+.area1-ri-p{
+	font-size: 0.6rem;
+	margin-left: 5px;
+	color: #333;
+}
+.area1-ri-bg-price{
+	font-size: 0.6rem;
+	line-height: 1rem;
+	color: #FF0000;
+}
+.m-title{
+	text-align: center;
+	font-size: 0.75rem;
+	color: #333;
+	line-height: 3rem;
+}
+.m-t-pri1,.m-t-pri2{
+	font-size: 1rem;
+	color: #FF0000;
+}
+.m-progress {
+  overflow: hidden;
+  margin: 0 30px;
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+.m-progress-bar {
+  float: left;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #feada6;
+}
+.m-shareBtn img{
+	width: 70%;
+	margin: 0 auto;
+}
+.m-countDown{
+	text-align: center;
+	margin-top: 30px;
+}
+#m-LeftTime{
+	color: #FF0000;
+}
+.sigma-content{
+    margin: 20px 50px;
+    text-align: center;
+}
+.sigma-middle-line:before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #999;
+    position: relative;
+    top: 14px;
+    left: 0;
+}
+.sigma-line-text{
+    display: inline-block;
+    padding: 0 18px 0 18px;
+    position: relative;
+    font-size: 14px;
+    background-color: #e7eced;
+    font-weight: normal;
+}
+.bg-pl-list{
+	background-color: #e7eced;
+}
+.bg-pl-cont ul li{
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+.bg-pl-cont ul{
+	padding: 0px 1rem 1rem 1rem;
+}
+.pl-tx{
+	float: left;
+}
+.bg-pl-col1{
+	float: left;
+	color: #666;
+}
+.bg-pl-col1 p{
+	line-height: 1rem;
+}
+.pl-tx img{
+	width: 2.5rem;
+	height: 2.5rem;
+	vertical-align: middle;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.pl-text{
+	float: right;
+	font-size: 0.75rem;
+	color: #FF0000;
+}
+.pl-text p{
+	line-height: 2.5rem;
+}
+.pl-username{
+	margin-bottom: 0.5rem;
+}
+.bg-goods-list{
+	background-color: #f4d2d1;
+	margin: 20px 20px 20px 20px;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+.gs-top-col1{
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #EE6460;
+}
+.gs-top-col1-left{
+	float: left;
+	color: #ee6460;
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+.gs-top-col1-right{
+	float: right;
+	color: #ee6460;
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+.gs-m-tx{
+	width: 2rem;
+	height: 2rem;
+	float: left;
+	border-radius: 50%;
+}
+.gs-m-name{
+	float: left;
+	font-size: 0.7rem;
+	color: #666;
+	line-height: 2rem;
+	margin-left: 10px;
+}
+.gs-m-time{
+	float: right;
+	font-size: 0.6rem;
+	color: #666;
+	line-height: 2rem;
+}
+.gs-m ul li{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.m-mask{
+	position: fixed;
+	left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+#BgDiv1 {
+    background-color: #000;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6 !important;
+    filter: alpha(opacity=60);
+}
+.bg-close{
+	position: absolute;
+	top: 15%;
+	right: 14%;
+	z-index: 1111;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.m-rule-close{
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	z-index: 1111;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.bg-cont{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+.m-rule-main{
+	padding: 5px 10px;
+}
+.m-rule-title{
+	text-align: center;
+	font-size: 1rem;
+	color: #34342c;
+}
+.rp-open{
+	width: 100%;
+}
+.gs-rp{
+	width: 100%;
+	position: absolute;
+	top: 100px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.gs-btn{
+	position: absolute;
+    top: 28%;
+    left: 0;
+    right: 0;
+    width: 35%;
+    margin: 0 auto;
+    height: 20%;
+    z-index: 1299;
+}
+.rp-open-main{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.rp-open-text{
+	color: #fff;
+	height: 2.5rem;
+	font-size: 1.5rem;
+}
+.open-price{
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+.open-input{
+	width: 7.5rem;
+	border-radius: 5px;
+	font-size: 0.75rem;
+	padding: 5px;
+	color: #fff;
+	background-color: #e86659;
+}
+.get_btn{
+	width: 6rem;
+	color: #df3222;
+	background-color: #fff;
+	font-size: 1rem;
+	margin: 0 auto;
+	border-radius: 5px;
+	font-weight: 500;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.rp-open-col{
+	padding-top: 53%;
+	text-align: center;
+}
+.app-link{
+	color: #fff;
+	letter-spacing: 2px;
+	font-size: 0.6rem;
+}
+/*活动规则*/
+.m-rule{
+	position: absolute;
+	top: 20%;
+	z-index: 1500;
+	width: 90%;
+	margin: 0 5%;
+	height: 400px;
+	border-radius: 5px;
+	background-color: #fff7e0;	
+}
+/* 当屏幕小于375 css */
+@media only screen and (max-width: 350px) {
+	.bg-pl-col1 p {
+		font-size: 0.5rem;
+	}
+	.pl-text p {
+		font-size: 0.5rem;
+	}
+	.gs-m-name {
+		width: 50%;
+		line-height: 1rem;
+	}
+	.get_btn{
+		margin-bottom: 5px;
+	}
+}

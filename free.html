@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" id="viewport" content="width = device-width, initial-scale = 1, minimum-scale = 1, maximum-scale = 1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>我也要免费拿</title>
+<link rel="stylesheet" type="text/css" href="css/comReset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jq-weui.css">
+<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+<script src="js/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="wrap">
+       <div class="bargain-cont">
+           <div class="bg-col-top">
+               <div class="col1-top">
+               	   <p class="hd-rule">活动规则</p>
+                   <img class="bg-head-img" src="img/1.png" alt="">
+                   <p>萌萌的骚年</p>
+                   <p>我发现了一个好货,来一起砍价优惠拿</p>
+               </div>
+               <div class="col1-main">
+               	<div class="col1-cont">
+                   <div class="col1-area1-le">
+                       <img src="img/1.png" alt="">
+                   </div>
+                   <div class="col1-area1-ri">
+                       <p class="area1-ri-name">爱上门智能语音血压仪 爱上门智能 爱上门血压仪ASM-XB-1</p>
+                       <div class="area1-ri-cont">
+                           <p class="area1-ri-price">¥<span>899.00</span></p>
+                           <p class="area1-ri-bg">砍价<span class="area1-ri-bg-price">0</span>元拿</p>
+                           <p class="area1-ri-p"><span>266</span>人已砍价成功</p>
+                       </div>
+                   </div>
+                   </div>
+               </div>
+           </div>
+           <div class="bg-col-m">
+           	 <div class="m-title">
+           	 	<p>已砍价<span class="m-t-pri1">129.6</span>元,还剩<span class="m-t-pri2">769.4</span>元</p>
+           	 </div>
+           	 <div class="m-progress">
+				  <div id="bar" style="width: 0%;" class="m-progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">				    
+				  </div>
+			 </div>
+			 <div class="m-shareBtn">
+			   <img class="m-sBtn" src="img/free-f.png" alt="" />
+			 </div>
+			 <div class="m-countDown">
+			 	<div id="m-countDown-time" class="m-countDown-time"><p>还剩 <span id="m-LeftTime"></span>过期,快来砍价吧！</p>
+			 		
+			 	</div>
+			 </div>
+           </div>
+           <div class="bg-goods-list">
+           	 <div class="gs-top">
+           	 	<div class="gs-top-col1">
+           	 		<p class="gs-top-col1-left">已有<span>800</span>人+砍价成功</p>
+           	 		<a class="gs-top-col1-right" href="">免单攻略</a>
+           	 	</div>
+           	 	<div class="gs-m">
+           	 		<ul>
+           	 			<li>
+           	 				<img class="gs-m-tx" src="img/1.png" alt="" />
+           	 				<p class="gs-m-name">萌萌的骚年<span>0</span>元拿了<span>爱上门血压仪</span></p>
+           	 				<p class="gs-m-time"><span>2</span>分钟前</p>
+           	 			</li>
+           	 			<li>
+           	 				<img class="gs-m-tx" src="img/1.png" alt="" />
+           	 				<p class="gs-m-name">萌萌的骚年<span>0</span>元拿了<span>爱上门血压仪</span></p>
+           	 				<p class="gs-m-time"><span>2</span>分钟前</p>
+           	 			</li>
+           	 			<li>
+           	 				<img class="gs-m-tx" src="img/1.png" alt="" />
+           	 				<p class="gs-m-name">萌萌的骚年<span>0</span>元拿了<span>爱上门血压仪</span></p>
+           	 				<p class="gs-m-time"><span>2</span>分钟前</p>
+           	 			</li>
+           	 		</ul>
+           	 	</div>
+           	 </div>
+           </div>
+           
+           
+           
+       </div>
+    </div>
+<div class="m-rule">
+	<div class="m-rule-main">
+        <h1 class="m-rule-title">活动规则</h1>
+        <p></p>
+	</div>
+</div>
+<img style="display: block;" class="m-rule-close" src="img/bg-close.png" alt="" />
+<div id="BgDiv1" class="share-cancel" style="display: block; opacity: 1;"></div>
+<script type="text/javascript">
+//进度条js
+	function $s(d){
+	
+	return document.getElementById(d);
+	
+	}
+	var sz="80%";
+	function smation(){ 
+	$s("bar").style.width = parseInt($s("bar").style.width) + 1 + "%"; 
+	$s("bar").innerHTML = $s("bar").style.width; 
+	if($s("bar").style.width == sz){ 
+	    window.clearInterval(bar); 
+	  }
+	} 
+	var bar = setInterval(function(){
+	smation();
+	}, 50);
+	window.onload = function(){
+		bar;
+	}
+</script>
+<script>
+//砍价倒计时js
+function FreshTime(){
+	var endtime=new Date("2018/8/05,12:00:00");//结束时间
+	var nowtime = new Date();//当前时间
+	var lefttime=parseInt((endtime.getTime()-nowtime.getTime())/1000); 
+	d=parseInt(lefttime/3600/24);
+	h=parseInt((lefttime/3600)%24);
+	m=parseInt((lefttime/60)%60);
+	s=parseInt(lefttime%60);
+  
+	if(lefttime<=0){
+		var mTime=document.getElementById("m-countDown-time");
+		mTime.innerHTML="砍价已结束";
+		mTime.style.color="#FF0000";
+		clearInterval(sh);
+	}else{
+		document.getElementById("m-LeftTime").innerHTML=d+"天"+h+"小时"+m+"分"+s+"秒";
+	}
+}
+FreshTime()
+var sh;
+sh=setInterval(FreshTime,1000);
+</script>
+<script type="text/javascript">
+//点击帮忙砍一刀按钮弹出js
+	$(".m-sBtn").click(function(){
+		
+      })
+
+
+</script>
+</body>
+</html>
