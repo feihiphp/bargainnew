@@ -58,7 +58,7 @@
            	 <div class="gs-top">
            	 	<div class="gs-top-col1">
            	 		<p class="gs-top-col1-left">已有<span>800</span>人+砍价成功</p>
-           	 		<a class="gs-top-col1-right" href="">免单攻略</a>
+           	 		<p class="gs-top-col1-right">免单攻略</p>
            	 	</div>
            	 	<div class="gs-m">
            	 		<ul>
@@ -105,6 +105,30 @@
 	</div>
  </div>
 </div>
+<!--活动规则-->
+<div class="m-rule" style="display: none;">
+	<img class="m-rule-close" src="img/bg-close.png" alt="" />
+	<div class="m-rule-main">
+        <h1 class="m-rule-title">活动规则</h1>
+        <p>活动规则：</p>
+        <p>1、为感谢广大消费者对爱上门四年来的支持和挚爱，爱上门官方为消费者提供免费领取商品的福利，消费者可以通过参与砍价免费活动获得商品。活动内不涉及任何支付行为，请广大消费者放心参与</p>
+        <p>2、选择您心仪的商品，邀请好友一起砍价，只要在24小时内价格砍到0元就可以免费获得商品，所有商品成本及邮寄费用由爱上门官方承担。</p>
+        <p>3、必须在砍价过期前提供收货地址，没有收货地址砍到0元也是砍价失败，将无法为您发货。</p>
+        <p>4、每次砍价金额随机，参与好友越多越容易成功。</p>
+        <p>5、您每天最多只能帮助3个好友砍价，对于同一个砍价，只能帮助砍价1次。</p>
+	</div>
+</div>
+<!--免单攻略-->
+<div class="m-strategy" style="display: none;">
+	<img class="m-strategy-close" src="img/bg-close.png" alt="" />
+	<div class="m-rule-main">
+        <h1 class="m-rule-title">免单攻略</h1>
+        <p>免单攻略：</p>
+        <p>1、为感谢广大消费者对爱上门四年来的支持和挚爱，爱上门官方为消费者提供免费领取商品的福利，消费者可以通过参与砍价免费活动获得商品。活动内不涉及任何支付行为，请广大消费者放心参与</p>
+        <p>2、选择您心仪的商品，邀请好友一起砍价，只要在24小时内价格砍到0元就可以免费获得商品，所有商品成本及邮寄费用由爱上门官方承担。</p>
+	</div>
+</div>
+<div id="BgDiv2" class="share-cancel" style="display: none; opacity: 1;"></div>
 <script type="text/javascript">
 //进度条js
 	function $s(d){
@@ -152,10 +176,15 @@ var sh;
 sh=setInterval(FreshTime,1000);
 </script>
 <script type="text/javascript">
+	var endtime=new Date("2018/8/05,12:00:00");//结束时间
+	var nowtime = new Date();//当前时间
+	var lefttime=parseInt((endtime.getTime()-nowtime.getTime())/1000); 
 //点击帮忙砍一刀按钮弹出js
 	$(".bmBtn").click(function(){
 		var oInp=$(".open-input").val();
-		if (oInp!=="") {
+		if (lefttime<=0) {
+			alert("砍价活动已结束")
+		} else if (oInp!=="") {
 			$(".m-mask").show();
 	      	$("#BgDiv1").show();
       	    $(".gs-rp").hide();
@@ -165,6 +194,7 @@ sh=setInterval(FreshTime,1000);
 	      	$(".bg-close").show();
 	      	$(".gs-rp").show();
 		}
+		
       })
 //点击打开js
 	$(".gs-rp").click(function(){
@@ -205,6 +235,28 @@ sh=setInterval(FreshTime,1000);
 	      	$(".gs-rp").hide();
 	      	$(".bg-cont").hide();
        })
+</script>
+<script type="text/javascript">
+//点击活动规则按钮
+    $(".hd-rule").click(function(){
+		$(".m-rule").slideToggle(500);
+		$("#BgDiv2").show();
+      })
+//点击活动规则弹窗关闭按钮
+    $(".m-rule-close").click(function(){
+		$(".m-rule").hide();
+		$("#BgDiv2").hide();
+      })
+//点击免单攻略按钮
+    $(".gs-top-col1-right").click(function(){
+		$(".m-strategy").slideToggle(500);
+		$("#BgDiv2").show();
+      })
+//点击免单攻略弹窗关闭按钮
+    $(".m-strategy-close").click(function(){
+		$(".m-strategy").hide();
+		$("#BgDiv2").hide();
+      })
 </script>
 </body>
 </html>
