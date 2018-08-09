@@ -450,8 +450,23 @@ html{
 	border-radius: 8px;
 	background-color: #eb0000;
 }
+/* 当屏幕大于375 css */
+@media only screen and (min-width: 375px) and (max-width: 750px) {
+	.bg-pl-col1 p {
+		font-size: 0.5rem;
+	}
+	.pl-text p {
+		font-size: 0.5rem;
+	}
+	.gs-m-name {
+		width: 70%;
+	}
+	.get_btn{
+		margin-bottom: 5px;
+	}
+}
 /* 当屏幕小于375 css */
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 300px) and (max-width: 375px) {
 	.bg-pl-col1 p {
 		font-size: 0.5rem;
 	}
@@ -461,6 +476,8 @@ html{
 	.gs-m-name {
 		width: 50%;
 		line-height: 1rem;
+		font-size: 0.5rem;
+		margin-left: 10px;
 	}
 	.get_btn{
 		margin-bottom: 5px;

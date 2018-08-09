@@ -42,7 +42,7 @@
            	 	<p>已砍价<span class="m-t-pri1">129.6</span>元,还剩<span class="m-t-pri2">769.4</span>元</p>
            	 </div>
            	 <div class="m-progress">
-				  <div id="bar" style="width: 0%;" class="m-progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">				    
+				  <div id="bar" style="width: 0%;" class="m-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">				    
 				  </div>
 			 </div>
 			 <div class="m-shareBtn">
@@ -136,8 +136,14 @@
 	return document.getElementById(d);
 	
 	}
-	var sz="80%";
+	// sz必须为整数
+	var sz="70%";
+		
 	function smation(){ 
+		// sz为0的时候 bar为0
+		if (sz=="0%") {
+		$s("bar").style.width = 0; 
+	}
 	$s("bar").style.width = parseInt($s("bar").style.width) + 1 + "%"; 
 	$s("bar").innerHTML = $s("bar").style.width; 
 	if($s("bar").style.width == sz){ 
@@ -153,27 +159,27 @@
 </script>
 <script>
 //砍价倒计时js
-function FreshTime(){
-	var endtime=new Date("2018/8/05,12:00:00");//结束时间
-	var nowtime = new Date();//当前时间
-	var lefttime=parseInt((endtime.getTime()-nowtime.getTime())/1000); 
-	d=parseInt(lefttime/3600/24);
-	h=parseInt((lefttime/3600)%24);
-	m=parseInt((lefttime/60)%60);
-	s=parseInt(lefttime%60);
-  
-	if(lefttime<=0){
-		var mTime=document.getElementById("m-countDown-time");
-		mTime.innerHTML="砍价已结束";
-		mTime.style.color="#FF0000";
-		clearInterval(sh);
-	}else{
-		document.getElementById("m-LeftTime").innerHTML=d+"天"+h+"小时"+m+"分"+s+"秒";
+	function FreshTime(){
+		var endtime=new Date("2018/8/08,12:00:00");//结束时间
+		var nowtime = new Date();//当前时间
+		var lefttime=parseInt((endtime.getTime()-nowtime.getTime())/1000); 
+		d=parseInt(lefttime/3600/24);
+		h=parseInt((lefttime/3600)%24);
+		m=parseInt((lefttime/60)%60);
+		s=parseInt(lefttime%60);
+	
+		if(lefttime<=0){
+			var mTime=document.getElementById("m-countDown-time");
+			mTime.innerHTML="砍价已结束";
+			mTime.style.color="#FF0000";
+			clearInterval(sh);
+		}else{
+			document.getElementById("m-LeftTime").innerHTML=d+"天"+h+"小时"+m+"分"+s+"秒";
+		}
 	}
-}
-FreshTime()
-var sh;
-sh=setInterval(FreshTime,1000);
+	FreshTime()
+	var sh;
+	sh=setInterval(FreshTime,1000);
 </script>
 <script type="text/javascript">
 	var endtime=new Date("2018/8/05,12:00:00");//结束时间
