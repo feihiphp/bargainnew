@@ -5,13 +5,29 @@ html{
 	position: relative;
 }
 .bg-col-top{
-    background: url(../img/bg-col-top-bj.png) no-repeat;
+	background: -webkit-linear-gradient(#fe9a8b, #f78ca0); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#fe9a8b, #f78ca0); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#fe9a8b, #f78ca0); /* Firefox 3.6 - 15 */
+	background: linear-gradient(#fe9a8b, #f78ca0); /* 标准的语法 */
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-position: center 0;
     height: 100%;
-    width: 100%;
+	padding: 10px 10px;
+}
+.col1-top-le-img{
+	float: left;
+}
+.col1-top-le-m{
+	float: left;
+	line-height: 1.25rem;
+	font-size: 0.5rem;
+	color: #000;
+}
+.col1-top-le{
+	overflow: hidden;
+	color: #fff;
 }
 .bg-head-img{
 	width: 2.5rem;
@@ -19,25 +35,26 @@ html{
 	display: inline-block;
 	border-radius: 50%;
 	vertical-align: middle;
-	margin: 20px 0 5px 0;
+	margin-right: 10px;
 }
 .col1-top{
-	text-align: center;
 	font-size: 0.75rem;
-	color: #fff;
 	position: relative;
+	padding-top: 30px;
+	background-color: #fff;
+	padding: 10px 10px;
+	border-radius: 5px;
 }
 .hd-rule{
 	position: absolute;
-	top: 20px;
-	right: 20px;
+	top: 5px;
+	right: 5px;
 	padding: 3px 5px;
-	font-size: 0.75em;
+	font-size: 0.6em;
 	border-radius: 5px;
-	border: 1px solid #fff;	
-}
-.col1-top p{
-	line-height: 1rem;
+	color: #999;
+	border: 1px solid #999;	
+	line-height: 0.75rem !important;
 }
 .col1-area1-le img{
 	width: 100%;
@@ -65,15 +82,13 @@ html{
 	padding-left: 3%;
 }
 .col1-main{
-	margin-bottom: 30px;
+	margin-bottom: 5px;
 }
 .col1-cont{
 	overflow: hidden;
 	margin-top: 15px;
 	padding: 5px;
-	margin-left: 20px;
-	margin-right: 20px;
-	background-color: #fff;
+	background-color: #eee;
 	border-radius: 5px;
 }
 .area1-ri-cont{
@@ -118,7 +133,7 @@ html{
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 5px;
-  background-color: #f5f5f5;
+  background-color: #f1f1f1;
 }
 .m-progress-bar {
   float: left;
@@ -136,14 +151,17 @@ html{
 }
 .m-countDown{
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 15px;
 }
 #m-LeftTime{
 	color: #FF0000;
 }
 .sigma-content{
     margin: 20px 50px;
-    text-align: center;
+	text-align: center;
+}
+.hotsale img{
+	width: 100%;
 }
 .sigma-middle-line:before{
     content: '';
@@ -160,7 +178,7 @@ html{
     padding: 0 18px 0 18px;
     position: relative;
     font-size: 14px;
-    background-color: #e7eced;
+    background-color: #fa9396;
     font-weight: normal;
 }
 .bg-pl-list{
@@ -203,7 +221,7 @@ html{
 }
 .bg-goods-list{
 	background-color: #f4d2d1;
-	margin: 20px 20px 20px 20px;
+	margin: 20px 0px 0px 0px;
 	padding: 5px 15px;
 	border-radius: 5px;
 }
@@ -377,8 +395,8 @@ html{
 }
 /*活动规则*/
 .m-rule{
-	position: absolute;
-	top: 20%;
+	position: fixed;
+	top: 30%;
 	z-index: 1500;
 	width: 90%;
 	margin: 0 5%;
@@ -386,8 +404,8 @@ html{
 	background-color: #fff7e0;	
 }
 .m-strategy{
-	position: absolute;
-	top: 20%;
+	position: fixed;
+	top: 30%;
 	z-index: 1500;
 	width: 90%;
 	margin: 0 5%;
@@ -409,7 +427,7 @@ html{
 }
 .download-app{
 	position: absolute;
-	top: 20%;
+	top: 15%;
 	width: 100%;
 	z-index: 2999;
 }.app-bg{
@@ -444,14 +462,159 @@ html{
 .app-link{
 	font-size: 0.8rem;
 	display: inline-block;
-	margin-top: 30px;
 	color: #fff;
+	margin-top: 5px;
 	padding: 7px 20px;
 	border-radius: 8px;
 	background-color: #eb0000;
 }
+.hotsale-pr{
+	width: 100%;
+	height: 160px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.hotsale-list ul{
+	overflow: hidden;
+	margin-left: -2%;
+}
+.hotsale-list ul li{
+	float: left;
+	margin-left: 2%;
+	width: 48%;
+	border-radius: 3px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.hs-pr-col{
+	overflow: hidden;
+	padding: 2px 3px;
+}
+.hs-pr-col-area1{
+	float: left;
+	font-size: 0.5rem;
+	color: #FF0000;
+}
+.hs-pr-col-area2{
+	float: right;
+	font-size: 0.5rem;
+	color: #999999;
+}
+.hotsale-pr-name{
+	font-size: 0.55rem;
+	padding: 2px 3px;
+	color: #000;
+	height: 2rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.hs-area1-price{
+	font-size: 0.65rem;
+}
+.hs-area1-piece{
+	font-size: 0.65rem;
+}
+.hs-pr-buynow{
+	font-size: 0.75rem;
+	line-height: 1.5rem;
+	border-radius: 4px;
+	text-align: center;
+	color: #fff;
+	background-color: #d00a04;
+	display: block;
+	margin: 10px 15px;
+}
+.free-step img{
+	width: 100%;
+}
+.free-step h1{
+	font-size: 0.75rem;
+	color: #54302d;
+	padding-left: 10px;
+	line-height: 1.25rem;
+}
+.cp-img{
+	width: 100%;
+	height: 4.5rem;
+	border-radius: 3px;
+}
+.hs-cp-img{
+	float: left;
+	width: 25%;
+	margin-right: 3%;
+}
+.hs-pr-list ul{
+	overflow: hidden;
+}
+.hs-list-li-main{
+	float: left;
+	width: 72%;
+}
+.hs-pr-list ul li{
+	width: 100%;
+	overflow: hidden;
+	padding: 10px 0px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.hs-list-cp-name{
+	font-size: 0.75rem;
+	line-height: 1rem;
+	height: 2rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.hs-cp-col1-p1{
+	float: left;
+	color: #999;
+	text-decoration: line-through;
+}
+.hs-cp-col1-p2{
+	float: right;
+	color: #999;
+}
+.hs-pr-list{
+	border-top: 1px solid #dbdbdb;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.hs-cp-col1{
+	overflow: hidden;
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+.hs-col1-btn{
+	overflow: hidden;
+}
+.hs-col1-btn-price{
+	float: left;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #FF0000;
+}
+.hs-col-btn-mf{
+	float: right;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	margin: 0.15rem 0.2rem 0rem 0rem;
+	background-color: #e60012;
+	padding: 0.1rem 0.75rem;
+	color: #fff;
+	border-radius: 5px;
+}
+.free-step{
+	background-color: #fafae2;
+	margin-top: 0.75rem;
+	border-radius: 5px;
+}
 /* 当屏幕大于375 css */
-@media only screen and (min-width: 375px) and (max-width: 750px) {
+@media only screen and (min-width: 350px) and (max-width: 750px) {
 	.bg-pl-col1 p {
 		font-size: 0.5rem;
 	}
@@ -459,14 +622,22 @@ html{
 		font-size: 0.5rem;
 	}
 	.gs-m-name {
-		width: 70%;
+		width: 60%;
+		font-size: 0.6rem;
+		overflow: hidden;
+	    text-overflow: ellipsis;
+	    display: -webkit-box;
+	    line-height: 1rem;
+	    height: 2rem;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
 	}
 	.get_btn{
 		margin-bottom: 5px;
 	}
 }
 /* 当屏幕小于375 css */
-@media only screen and (min-width: 300px) and (max-width: 375px) {
+@media only screen and (min-width: 300px) and (max-width: 350px) {
 	.bg-pl-col1 p {
 		font-size: 0.5rem;
 	}
@@ -476,10 +647,23 @@ html{
 	.gs-m-name {
 		width: 50%;
 		line-height: 1rem;
+		height: 2rem;
 		font-size: 0.5rem;
 		margin-left: 10px;
 	}
 	.get_btn{
 		margin-bottom: 5px;
 	}
+	.open-price{
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	}
+	.m-countDown-time{
+		font-size: 0.6rem;
+	}
+    .rp-open-text{
+	color: #fff;
+	height: 1.5rem;
+	font-size: 1rem;
+    }
 }
